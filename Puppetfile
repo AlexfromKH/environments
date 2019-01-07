@@ -6,5 +6,5 @@ mod 'puppetlabs/stdlib'
 
 # My modules:
 mod "puppet_env",
-    :git    => "git@github.com:AlexfromKH/puppet_env.git"
-    :branch => "master"
+    :git    => 'git@github.com:AlexfromKH/puppet_env.git',
+    :branch => 'master'
