@@ -8,3 +8,7 @@ mod 'puppetlabs/stdlib'
 mod "puppet_env",
     :git    => 'git@github.com:AlexfromKH/puppet_env.git',
     :branch => 'master'
+
+mod "puppet_webserver",
+    :git    => 'git@github.com:AlexfromKH/puppet_webserver.git',
+    :branch => 'master'
