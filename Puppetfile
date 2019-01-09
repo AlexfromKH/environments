@@ -14,5 +14,5 @@ mod "puppet_webserver",
 # Modules Test Roles
 mod 'puppetlabs-apache'
 mod 'puppetlabs-mysql'
-mod 'myflower-php'
+mod 'puppet-php', '6.0.2'
 mod 'puppetlabs-concat'
