@@ -15,4 +15,5 @@ mod "puppet_webserver",
 mod 'puppetlabs-apache'
 mod 'puppetlabs-mysql'
 mod 'puppet-php', '6.0.2'
+mod 'puppet-archive', '3.2.1'
 mod 'puppetlabs-concat'
