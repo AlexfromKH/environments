@@ -11,3 +11,8 @@ mod "puppet_env",
 mod "puppet_webserver",
     :git    => 'git@github.com:AlexfromKH/puppet_webserver.git',
     :branch => 'master'
+# Modules Test Roles
+mod 'puppetlabs-apache'
+mod 'puppetlabs-mysql'
+mod 'puppet-php', '6.0.2'
+mod 'puppetlabs-concat'
