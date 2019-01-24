@@ -4,6 +4,6 @@
 node default {
   include role::lamp
 }
-node "ubuntu-agent" {
+node "centos-agent" {
   include role::forge_mattermost
 }
