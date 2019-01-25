@@ -1,12 +1,14 @@
 class profile::nginx {
   class { 'nginx': }
-  nginx::resource::upstream { 'mattermost':
+  nginx::resource::upstream {'mattermost':
+    ensure  => present,
     members => {
-      'localhost:8065':
-        server => 'localhost'
-        port   => 8065
-    }
-
+      'localhost:8065' => {
+        server => 'localhost',
+        port   => 8065,
+      },
+    },
+  }
   nginx::resource::server { 'mattermost':
     server_name         => [ 'myserver.mydomain' ],
     proxy               => 'http://mattermost',
