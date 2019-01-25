@@ -3,9 +3,9 @@ class profile::nginx {
   nginx::resource::upstream {'mattermost':
     ensure  => present,
     members => {
-      'localhost:8065' => {
+      'localhost:80' => {
         server => 'localhost',
-        port   => 8065,
+        port   => 80,
       },
     },
   }
