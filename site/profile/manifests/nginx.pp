@@ -1,10 +1,11 @@
 class profile::nginx {
   class { 'nginx': }
   nginx::resource::upstream { 'mattermost':
-    members  => { 'localhost:8065':
-      server => 'localhost'
-      port   => 8065
-      weight => 1
+    members  => {
+      'localhost:8065':
+        server => 'localhost'
+        port   => 8065
+        weight => 1
     },
   }
   nginx::resource::server { 'mattermost':
