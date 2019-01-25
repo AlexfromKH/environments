@@ -1,7 +1,7 @@
 class profile::nginx {
   class { 'nginx': }
   nginx::resource::upstream { 'mattermost':
-    members => [ 'localhost:8065' ],
+    members => 'localhost:8065',
   }
   nginx::resource::server { 'mattermost':
     server_name         => [ 'myserver.mydomain' ],
