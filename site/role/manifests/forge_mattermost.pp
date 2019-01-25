@@ -1,5 +1,5 @@
 class role::forge_mattermost {
-#  include profile::nginx
+  include profile::nginx
   include profile::postgresql
   include profile::mattermost
 
