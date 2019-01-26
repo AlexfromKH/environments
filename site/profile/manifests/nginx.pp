@@ -1,7 +1,6 @@
 class profile::nginx {
   class { 'nginx': }
   nginx::resource::upstream {'mattermost':
-    ensure  => present,
     members => {
       'localhost:8065' => {
         server => 'localhost',
