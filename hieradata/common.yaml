@@ -6,7 +6,9 @@ ntp::servers:
   - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
 
-# mattermost
+# mattermost database
 mysql_r_pass: 'root'
 mmuser: 'mmuser'    
 mmpass: 'mmpass'
+# mattermost
+mmversion:  '5.7.0'
