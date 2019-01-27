@@ -3,5 +3,5 @@
 #  include role::lamp
 # }
 node "centos-agent" {
-  include role::forge_mattermost
+  include role::mattermost
 }

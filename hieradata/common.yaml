@@ -5,3 +5,8 @@ classes:
 ntp::servers:
   - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
+
+# mattermost
+mysql_r_pass: 'root'
+mmuser: 'mmuser'    
+mmpass: 'mmpass'
