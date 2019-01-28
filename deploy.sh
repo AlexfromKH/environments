@@ -1,7 +1,10 @@
 #!/bin/sh
+message=$1
+branches=$2
+deploy=$3
 git add  .
-git commit -m "$1"
-case "$2" in
+git commit -m "$message"
+case "$branches" in
   -p)
     branch="production"
     ;;
@@ -20,15 +23,15 @@ case "$2" in
 esac  
 git push origin "$branch"
 # deploy environment with r10k
-if [ -n $3 ] && [ $3 -eq "-r" ]; then
+if [ -n $deploy ] && [ $deploy -eq "-r" ]; then
   r10k deploy environment -p
   echo "*******************************"
   echo "files commited with $1 pushed to $branch and deployed with r10k to puppet environment"
   echo "*******************************"
-elif [ $3 -ne "-r" ]; then
+elif [ $deploy -ne "-r" ]; then
   echo "do deploy environment with r10k enter -r"
   exit 1
-elif [ -z $3 ]; then
+elif [ -z $deploy ]; then
   echo "*******************************"
   echo "files commited with $1 pushed to $branch"
   echo "*******************************"
