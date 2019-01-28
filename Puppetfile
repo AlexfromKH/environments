@@ -2,7 +2,7 @@ forge 'forge.puppetlabs.com'
 
 # Forge Modules
 mod 'puppetlabs/ntp', '4.1.0'
-mod 'puppetbs-stdlib'
+mod 'puppetlabs-stdlib', '5.1.0'
 
 # My modules:
 #mod "puppet_env",
