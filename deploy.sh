@@ -15,20 +15,19 @@ case "$2" in
     branch="staging"
     ;;
   *)
-    2>/dev/null
     echo "Usage: deploy {comment} {-p (production) | -t (test) | -s (staging | -m (master)}"
     exit 1
 esac  
 git push origin "$branch"
 # deploy environment with r10k
-if [ $3 -n ] && [ $3 -eq "-r" ]; then
+if [ -n $3 ] && [ $3 -eq "-r" ]; then
   r10k deploy environment -p
   echo "*******************************"
   echo "files commited with $1 pushed to $branch and deployed with r10k to puppet environment"
   echo "*******************************"
 elif [ $3 -ne "-r" ]; then
-  2>/dev/null
   echo "do deploy environment with r10k enter -r"
+  exit 1
 esle
   echo "*******************************"
   echo "files commited with $1 pushed to $branch"
