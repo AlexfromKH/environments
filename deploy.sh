@@ -28,7 +28,7 @@ if [ -n $3 ] && [ $3 -eq "-r" ]; then
 elif [ $3 -ne "-r" ]; then
   echo "do deploy environment with r10k enter -r"
   exit 1
-esle
+elif [ -z $3 ]; then
   echo "*******************************"
   echo "files commited with $1 pushed to $branch"
   echo "*******************************"
