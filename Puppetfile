@@ -1,8 +1,8 @@
 forge 'forge.puppetlabs.com'
 
 # Forge Modules
-mod 'puppetlabs/ntp', '4.1.0'
-mod 'puppetlabs-stdlib', '5.1.0'
+#mod 'puppetlabs/ntp', '4.1.0'
+#mod 'puppetlabs-stdlib', '5.1.0'
 
 # My modules:
 #mod "puppet_env",
@@ -23,3 +23,6 @@ mod 'puppetlabs-concat'
 #mod 'puppetlabs-postgresql', '5.11.0'
 mod 'puppetlabs-mysql', '8.0.0'
 mod 'puppet-nginx', '0.15.0'
+mod 'mattermost',
+    :git    => 'git@github.com:AlexfromKH/mattermost.git',
+    :branch => 'master'
