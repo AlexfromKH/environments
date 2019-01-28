@@ -28,7 +28,7 @@ if [ -n "$deploy" ] && [ "$deploy" -eq "-r" ]; then
   echo "*******************************"
   echo "files commited with \"$1\", pushed to \"$branch\" and deployed with r10k to puppet environment"
   echo "*******************************"
-elif [ "$deploy" -ne "-r" ]; then
+elif [ "$deploy" !== "-r" ]; then
   echo "do deploy environment with r10k enter -r"
   exit 1
 elif [ -z "$deploy" ]; then
