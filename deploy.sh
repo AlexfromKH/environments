@@ -1,18 +1,18 @@
 #!/bin/sh
 git add  .
 git commit -m "$1"
-case $2 in
+case "$2" in
   -p)
-    $branch=productin
+    branch="productin"
     ;;
   -m)
-    $branch="master"
+    branch="master"
     ;;
   -t)
-    $branch="test"
+    branch="test"
     ;;
   -s)
-    $branch="staging"
+    branch="staging"
     ;;
   *)
      echo "Usage: deploy {comment} {-p (production) | -t (test) | -s (staging | -m (master)}"
