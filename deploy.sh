@@ -18,7 +18,7 @@ case $2 in
      echo "Usage: deploy {comment} {-p (production) | -t (test) | -s (staging | -m (master)}"
      exit 1
 esac  
-git push origin "$2"
+git push origin "$branch"
 echo *******************************
 echo "files commited with $1 pushed to $2"
 echo *******************************
