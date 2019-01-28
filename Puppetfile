@@ -2,19 +2,13 @@ forge 'forge.puppetlabs.com'
 
 # Forge Modules
 #mod 'puppetlabs/ntp', '4.1.0'
-#mod 'puppetlabs-stdlib', '5.1.0'
+mod 'puppetlabs-stdlib', '5.1.0'
 
 # My modules:
 #mod "puppet_env",
 #  :git    => 'git@github.com:AlexfromKH/puppet_env.git',
 #  :branch => 'master'
 
-#mod "puppet_webserver",
-
-# Modules Test Roles
-#mod 'puppetlabs-apache'
-#mod 'puppetlabs-mysql'
-#mod 'puppet-php', '6.0.2'
 mod 'puppet-archive', '3.2.1'
 mod 'puppetlabs-concat'
 
