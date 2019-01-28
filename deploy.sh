@@ -20,5 +20,5 @@ case $2 in
 esac  
 git push origin "$branch"
 echo *******************************
-echo "files commited with $1 pushed to $2"
+echo "files commited with $1 pushed to $branch"
 echo *******************************
