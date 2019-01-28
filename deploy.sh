@@ -3,7 +3,7 @@ git add  .
 git commit -m "$1"
 case $2 in
   -p)
-    $branch="production"
+    $branch=productin
     ;;
   -m)
     $branch="master"
